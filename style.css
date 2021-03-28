@@ -36,3 +36,56 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+.wrapper{
+	margin: 0 auto;
+	max-width: 999px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	background-color: #1B5589;
+	padding: 0 50px;
+}
+.menu{
+	display: flex;
+	align-items: center;
+}
+.header-img{
+	width: 30px;
+	height: 30px;
+	background: url(images/chalkboard-teacher-solid2.svg) center / 30px 30px no-repeat;
+}
+.menu ul{
+	display: flex;
+	margin-left: 10px;
+}
+.menu ul li a{
+	color: #87A7C0;
+	margin-right: 25px;
+}
+.menu ul li:nth-child(3) a{
+	color: #fff;
+}
+.menu ul li a:hover{
+	color: #fff;
+}
+h1{
+	font-size: 20px;
+	text-align: center;
+	color: gray;
+	margin: 30px;
+}
+.wrapper-settings{
+	margin: 0 auto;
+	max-width: 899px;
+}
+.wrapper-settings ul{
+	display: flex;
+	background-color: #CCE5FF;
+	font-size: 16px;
+	padding: 15px 50px;
+	text-transform: uppercase;
+	color: #2E679F;
+}	
+
