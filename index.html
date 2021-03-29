@@ -26,15 +26,27 @@
 				<li>student's info</li>
 				<li>change password</li>
 			</ul>
-			<div class="forms"></div>
-				<form action="" class="avatar-form">
-					
+			<div class="forms">
+				<form action="#" class="avatar-form" method="post">
+					<img src="images/av_256.png" alt="">
+					<div class="file-container">
+						<label for="f1"><input type="file" id="f1" accept=".pdf, .png, .svg" name="file">Choose photo</label>
+					</div>
 				</form>
-				<form action="" class="info-form">
-					
+				<form action="#" class="info-form" method="post">
+					<input type="text" name="FirstName" maxlength="16" placeholder="First name" required>
+					<input type="text" name="LastName" maxlength="16" placeholder="Last name" required>
+					<input type="email" name="email" maxlength="30" placeholder="Email" required>
+					<input type="tel" name="phone" maxlength="30" placeholder="Phone number" required>
+					<input type="text" name="Address" maxlength="30" placeholder="Address" required>
+					<input type="text" name="FB" maxlength="30" placeholder="FB link" required>
+					<input type="submit" value="Save changes">	
 				</form>
-				<form action="" class="password-form">
-					
+				<form action="#" class="password-form" method="post">
+					<input type="password" name="password-old" maxlength="16" placeholder="Old password" required>
+					<input type="password" name="password-new" maxlength="16" placeholder="New password" required>
+					<input type="password" name="password-repeat" maxlength="16" placeholder="Repeat password" required>
+					<input type="submit" value="Change password">
 				</form>
 			</div>	
 		</div>

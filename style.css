@@ -40,6 +40,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	margin: 0 auto;
 	max-width: 999px;
 	font-family: Verdana, Geneva, sans-serif;
+	border: 1px solid gray;
+	padding-bottom: 20px;
 }
 header{
 	display: flex;
@@ -81,11 +83,56 @@ h1{
 	max-width: 899px;
 }
 .wrapper-settings ul{
-	display: flex;
-	background-color: #CCE5FF;
-	font-size: 16px;
-	padding: 15px 50px;
+	display: grid;
+    grid-template-columns: .8fr 3fr 3fr;
+    grid-column-gap: 15px;
+    background-color: #CCE5FF;
+    font-size: 16px;
+    padding: 15px 25px;
 	text-transform: uppercase;
 	color: #2E679F;
+	text-align: center;
+}
+.avatar-form img{
+	width: 100%;
 }	
-
+.forms{
+	display: grid;
+	grid-template-columns: 1.2fr 3fr 3fr;
+	grid-column-gap: 15px;
+	margin-top: 20px;
+}
+input{
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid lightgray;
+	color: gray;
+}
+input[type="submit"]{
+	border: none;
+	background-color: #6C757D;
+	cursor: pointer;
+	border-radius: 5px;
+	color: #fff;
+}
+#f1{
+	display: none;
+}
+.file-container label{
+	width: 100%;
+	display: block;
+	cursor:pointer;
+	background: #6C757D;
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+	padding: 10px;
+}
+.file-container{
+	margin-top: 10px;
+}
+input[type="submit"]:hover, .file-container label:hover{
+	background-color: #1B5589;
+}
